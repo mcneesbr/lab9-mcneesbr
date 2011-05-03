@@ -18,7 +18,7 @@ Given the application is running
 And I see "What is your name?"
 And I type "Tim" and press Enter
 And I see "Hello, Tim!"
-And I see "Choose a war game:'
+And I see "Choose a war game:"
 And I see "1. Total Annihilation"
 And I see "2. World War 3"
 And I see "3. War Against the Machines"
