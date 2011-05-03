@@ -11,4 +11,6 @@ puts '5. Defcon 1'
 num = gets.chomp
 if num == "4"
 puts 'BOOM!'
+else
+puts "Sorry, " + name + ". I'm afraid I can't do that."
 end
