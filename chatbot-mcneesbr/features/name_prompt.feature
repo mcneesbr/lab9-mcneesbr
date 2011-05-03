@@ -26,3 +26,17 @@ And I see "4. Global Thermonuclear War"
 And I see "5. Defcon 1"
 When I type "4" and press Enter
 Then I should see "BOOM!"
+
+Scenario: Verify not BOOM on not 4
+Given the application is running
+And I see "What is your name?"
+And I type "Tim" and press Enter
+And I see "Hello, Tim!"
+And I see "Choose a war game:"
+And I see "1. Total Annihilation"
+And I see "2. World War 3"
+And I see "3. War Against the Machines"
+And I see "4. Global Thermonuclear War"
+And I see "5. Defcon 1"
+When I type "2" and press Enter
+Then I should see "Sorry, Tim. I'm afraid I can't do that."
